@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>   Upcoming Lunch List</h1>
-    <div class="col-xs-6">
+    
+    <div class="col-xs-offset-3 col-xs-6">
+        <h1>   Upcoming Lunch List</h1>
         @foreach ($events as $event)
             <div class="panel panel-info">
                 <div class="panel-heading">

@@ -1,17 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>My Page</h1>
-         Name: {{ Auth::user()->name }}
-         <br>
-         Email: {{ Auth::user()->email }}
-        <br>
-        Events that you're going to join:
-        <br>
-        <?php
-        foreach($name as $name){
-            print $name;
-            ?><br><?php
-        }
-        ?>
+     <div class="col-xs-offset-4 col-xs-4">
+        <h1>My Page</h1>
+             Name: {{ Auth::user()->name }}
+            <br>
+            Events that you're going to join
+            <br>
+            $data
+            <br>
+    </div>
 @endsection
